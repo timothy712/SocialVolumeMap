@@ -1,4 +1,4 @@
-<html>
+                                                                                                              <html>
 
 <head>
 <title>社會網絡聲量圖－臉書</title>
@@ -21,11 +21,11 @@
 <div id="wrap">
 <div id="leftbar">
   <div id="top">查詢列</div>
-  <a href="index.html" style="color: black; text-decoration: none"><div id="condition" style="color: red">
+  <a href="index.html" style="color: black; text-decoration: none"><div id="condition">
     概括圖
   </div></a>
   
-  <a href="index_event.html" style="color: black; text-decoration: none"><div id="condition">
+  <a href="index_event.html" style="color: black; text-decoration: none"><div id="condition" style="color: red">
     依事件
   </div></a>
   
@@ -87,9 +87,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -100,7 +112,7 @@
       <span id="kangshan">岡山區</span>
     </a>
     
-    <div id="showboxKangshan" style="display: none">
+    <div id="showboxKangshan" style="display: none; height: auto">
       <div id="kangshanTitle">
         <?php
           $file = fopen('volume/kangshan.txt', 'r');
@@ -109,7 +121,7 @@
         ?>
       </div>
       
-      <div id="kangshanInfo">
+      <div id="kangshanInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -146,9 +158,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")"; */
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            } 
           
         ?>
       </div>
@@ -158,7 +182,7 @@
       <span id="dashe">大社區</span>
     </a>
     
-    <div id="showboxDashe" style="display: none">
+    <div id="showboxDashe" style="display: none; height: auto">
       <div id="dasheTitle">
         <?php
           $file = fopen('volume/dashe.txt', 'r');
@@ -167,7 +191,7 @@
         ?>
       </div>
       
-      <div id="dasheInfo">
+      <div id="dasheInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -204,9 +228,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -216,7 +252,7 @@
       <span id="nanzhih">楠梓區</span>
     </a>
     
-    <div id="showboxNanzhih" style="display: none">
+    <div id="showboxNanzhih" style="display: none; height: auto">
       <div id="nanzhihTitle">
         <?php
           $file = fopen('volume/nanzhih.txt', 'r');
@@ -225,7 +261,7 @@
         ?>  
       </div>
       
-      <div id="nanzhihInfo">
+      <div id="nanzhihInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -262,9 +298,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")"; */
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            } 
           
         ?>
       </div>
@@ -275,7 +323,7 @@
       <span id="zuoying">左營區</span>
     </a>
     
-    <div id="showboxZuoying" style="display: none">
+    <div id="showboxZuoying" style="display: none; height: auto">
       <div id="ZuoyingTitle">
         <?php
           $file = fopen('volume/zuoying.txt', 'r');
@@ -284,7 +332,7 @@
         ?>  
       </div>
       
-      <div id="zuoyingInfo">
+      <div id="zuoyingInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -321,9 +369,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>  
       </div>
@@ -334,7 +394,7 @@
       <span id="kushan">鼓山區</span>
     </a>
     
-    <div id="showboxKushan" style="display: none">
+    <div id="showboxKushan" style="display: none; height: auto">
       <div id="kushanTitle">
         <?php
           $file = fopen('volume/kushan.txt', 'r');
@@ -343,7 +403,7 @@
         ?>
       </div>
       
-      <div id="kushanInfo">
+      <div id="kushanInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -380,9 +440,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?> 
       </div>
@@ -392,7 +464,7 @@
       <span id="sanming">三民區</span>
     </a>
     
-    <div id="showboxSanming" style="display: none">
+    <div id="showboxSanming" style="display: none; height: auto">
       <div id="sanmingTitle">
         <?php
           $file = fopen('volume/sanming.txt', 'r');
@@ -401,7 +473,7 @@
         ?>
       </div>
       
-      <div id="sanmingInfo">
+      <div id="sanmingInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -438,9 +510,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "品」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -450,7 +534,7 @@
       <span id="renwu">仁武區</span>
     </a>
     
-    <div id="showboxRenwu" style="display: none">
+    <div id="showboxRenwu" style="display: none; height: auto">
       <div id="renwuTitle">
         <?php
           $file = fopen('volume/renwu.txt', 'r');
@@ -459,7 +543,7 @@
         ?>
       </div>
       
-      <div id="renwuInfo">
+      <div id="renwuInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -496,9 +580,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -508,7 +604,7 @@
       <span id="ciaotou">橋頭區</span>
     </a>
     
-    <div id="showboxCiaotou" style="display: none">
+    <div id="showboxCiaotou" style="display: none; height: auto">
       <div id="ciaotouTitle">
         <?php
           $file = fopen('volume/ciaotou.txt', 'r');
@@ -517,7 +613,7 @@
         ?>
       </div>
       
-      <div id="ciaotouInfo">
+      <div id="ciaotouInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -554,9 +650,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -566,7 +674,7 @@
       <span id="ziguan">梓官區</span>
     </a>
     
-    <div id="showboxZiguan" style="display: none">
+    <div id="showboxZiguan" style="display: none; height: auto">
       <div id="ziguanTitle">
         <?php
           $file = fopen('volume/ziguan.txt', 'r');
@@ -575,7 +683,7 @@
         ?>
       </div>
       
-      <div id="ziguanInfo">
+      <div id="ziguanInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -612,9 +720,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -624,7 +744,7 @@
       <span id="mituo">彌陀區</span>
     </a>
     
-    <div id="showboxMituo" style="display: none">
+    <div id="showboxMituo" style="display: none; height: auto">
       <div id="mituoTitle">
         <?php
           $file = fopen('volume/mituo.txt', 'r');
@@ -633,7 +753,7 @@
         ?>
       </div>
       
-      <div id="mituoInfo">
+      <div id="mituoInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -670,9 +790,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
@@ -682,7 +814,7 @@
       <span id="yongan">永安區</span>
     </a>
     
-    <div id="showboxYongan" style="display: none">
+    <div id="showboxYongan" style="display: none; height: auto">
       <div id="yonganTitle">
         <?php
           $file = fopen('volume/yongan.txt', 'r');
@@ -691,7 +823,7 @@
         ?>
       </div>
       
-      <div id="yonganInfo">
+      <div id="yonganInfo" style="height: auto">
         <?php
         
           $summary = array();
@@ -728,9 +860,21 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
+          /*echo "聲量最高為 「" . $keys[0] . "」 發生 " . $values . " 次。<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "百分比 " . $percentage . "% (" . $values . "/" . $totalcount . ")";*/
+          
+          $countkeys = count($keys);
+          //echo $countkeys;
+          echo "事件聲量分佈：";
+            for($i=0; $i<$countkeys; $i++){
+              //echo "事件聲量分佈：<br />";
+              if($keys[$i] == "毒"){
+                echo "<br />毒品事件發生 " . $combine[$keys[$i]] . "次。";
+              }else{
+                echo "<br />" . $keys[$i] . "事件發生 " . $combine[$keys[$i]] . "次。";
+              }  
+            }  
           
         ?>
       </div>
