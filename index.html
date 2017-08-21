@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>ªÀ·|ºôµ¸Án¶q¹Ï¡ĞÁy®Ñ</title>
+<title>ç¤¾æœƒç¶²çµ¡è²é‡åœ–ï¼è‡‰æ›¸</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -14,23 +14,23 @@
 
 <?php
   header("Content-Type:text/html; charset=utf-8");
-  $tags = array('ÅÑµs','°½ÅÑ', '·m§T', '¦Û±ş', '±ş®`', '¶BÄF', '¶Ë®`', 'ºj±ñ', '©ÊÄÌÂZ', '©Ê«I', '¬r', '¨«¨p', '¼É¤O');
+  $tags = array('ç«Šç›œ','å·ç«Š', 'æ¶åŠ«', 'è‡ªæ®º', 'æ®ºå®³', 'è©é¨™', 'å‚·å®³', 'æ§æ¢°', 'æ€§é¨·æ“¾', 'æ€§ä¾µ', 'æ¯’', 'èµ°ç§', 'æš´åŠ›');
   $counts = count($tags);
 
 ?>
 <div id="wrap">
 <div id="leftbar">
-  <div id="top">¬d¸ß¦C</div>
+  <div id="top">æŸ¥è©¢åˆ—</div>
   <a href="map.php" style="color: black; text-decoration: none"><div id="condition" style="color: red">
-    ·§¬A¹Ï
+    æ¦‚æ‹¬åœ–
   </div></a>
   
   <a href="map_event.php" style="color: black; text-decoration: none"><div id="condition">
-    ¨Ì¨Æ¥ó
+    ä¾äº‹ä»¶
   </div></a>
   
   <div id="condition">
-    ¨Ì®É¶¡
+    ä¾æ™‚é–“
   </div>
 </div>
 
@@ -38,7 +38,7 @@
   <div id="map">
   
     <a href="#" style="color: black" onmouseover="showInfoYenchao()" onmouseout="hideInfoYenchao()">
-      <span id="yenchao">¿P±_°Ï</span>
+      <span id="yenchao">ç‡•å·¢å€</span>
     </a>
     
     <div id="showboxYenchao" style="display: none">
@@ -87,9 +87,9 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
@@ -97,7 +97,7 @@
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoKangshan()" onmouseout="hideInfoKangshan()">
-      <span id="kangshan">©£¤s°Ï</span>
+      <span id="kangshan">å²¡å±±å€</span>
     </a>
     
     <div id="showboxKangshan" style="display: none">
@@ -146,16 +146,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "«~¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "å“ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoDashe()" onmouseout="hideInfoDashe()">
-      <span id="dashe">¤jªÀ°Ï</span>
+      <span id="dashe">å¤§ç¤¾å€</span>
     </a>
     
     <div id="showboxDashe" style="display: none">
@@ -204,16 +204,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoNanzhih()" onmouseout="hideInfoNanzhih()">
-      <span id="nanzhih">·£±ê°Ï</span>
+      <span id="nanzhih">æ¥ æ¢“å€</span>
     </a>
     
     <div id="showboxNanzhih" style="display: none">
@@ -262,9 +262,9 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
@@ -272,7 +272,7 @@
     
     
     <a href="#" style="color: black" onmouseover="showInfoZuoying()" onmouseout="hideInfoZuoying()">
-      <span id="zuoying">¥ªÀç°Ï</span>
+      <span id="zuoying">å·¦ç‡Ÿå€</span>
     </a>
     
     <div id="showboxZuoying" style="display: none">
@@ -321,9 +321,9 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "«~¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "å“ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>  
       </div>
@@ -331,7 +331,7 @@
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoKushan()" onmouseout="hideInfoKushan()">
-      <span id="kushan">¹ª¤s°Ï</span>
+      <span id="kushan">é¼“å±±å€</span>
     </a>
     
     <div id="showboxKushan" style="display: none">
@@ -380,16 +380,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?> 
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoSanming()" onmouseout="hideInfoSanming()">
-      <span id="sanming">¤T¥Á°Ï</span>
+      <span id="sanming">ä¸‰æ°‘å€</span>
     </a>
     
     <div id="showboxSanming" style="display: none">
@@ -438,16 +438,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "«~¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "å“ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoRenwu()" onmouseout="hideInfoRenwu()">
-      <span id="renwu">¤¯ªZ°Ï</span>
+      <span id="renwu">ä»æ­¦å€</span>
     </a>
     
     <div id="showboxRenwu" style="display: none">
@@ -496,16 +496,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoCiaotou()" onmouseout="hideInfoCiaotou()">
-      <span id="ciaotou">¾ôÀY°Ï</span>
+      <span id="ciaotou">æ©‹é ­å€</span>
     </a>
     
     <div id="showboxCiaotou" style="display: none">
@@ -554,16 +554,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoZiguan()" onmouseout="hideInfoZiguan()">
-      <span id="ziguan">±ê©x°Ï</span>
+      <span id="ziguan">æ¢“å®˜å€</span>
     </a>
     
     <div id="showboxZiguan" style="display: none">
@@ -612,16 +612,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoMituo()" onmouseout="hideInfoMituo()">
-      <span id="mituo">À±ªû°Ï</span>
+      <span id="mituo">å½Œé™€å€</span>
     </a>
     
     <div id="showboxMituo" style="display: none">
@@ -670,16 +670,16 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
     </div>
     
     <a href="#" style="color: black" onmouseover="showInfoYongan()" onmouseout="hideInfoYongan()">
-      <span id="yongan">¥Ã¦w°Ï</span>
+      <span id="yongan">æ°¸å®‰å€</span>
     </a>
     
     <div id="showboxYongan" style="display: none">
@@ -728,9 +728,9 @@
           $keys = array_keys($combine);
           $values = $combine[$keys[0]];
           
-          echo "Án¶q³Ì°ª¬° ¡u" . $keys[0] . "¡v µo¥Í " . $values . " ¦¸¡C<br />";
+          echo "è²é‡æœ€é«˜ç‚º ã€Œ" . $keys[0] . "ã€ ç™¼ç”Ÿ " . $values . " æ¬¡ã€‚<br />";
           $percentage = round(($values/$totalcount)*100, 2);
-          echo "¦Ê¤À¤ñ " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
+          echo "ç™¾åˆ†æ¯” " . $percentage . "% (" . $values . "/" . $totalcount . ")";  
           
         ?>
       </div>
@@ -740,11 +740,11 @@
 </div>
 <div id="rightbar">
   <div id="showboxTime">
-    2017¦~
+    2017å¹´
   </div>
   
   <div id="showboxVolume">
-    °Q½×Án¶q
+    è¨è«–è²é‡
   </div>
   
   <div id="content1">
@@ -752,7 +752,7 @@
     </div>
     
     <div id="volumetype">
-      ¶BÄF
+      è©é¨™
     </div>
   </div>
   
@@ -761,28 +761,28 @@
     </div>
     
     <div id="volumetype">
-      ¬r«~
+      æ¯’å“
     </div>
   </div>
 
 </div>
 </div>
 <div id="footer">
-  ¸ê®Æ¨Ó·½¡G<br />
-  °ª¶¯¥«¬F©²Äµ¹î§½¡G<a href="https://www.facebook.com/KaohsiungPolice/?fref=ts" >https://www.facebook.com/KaohsiungPolice/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½¹ª¤s¤À§½¡G<a href="https://www.facebook.com/kcpdgp/?fref=ts">https://www.facebook.com/kcpdgp/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½¥ªÀç¤À§½¡G<a href="https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%B7%A6%E7%87%9F%E5%88%86%E5%B1%80-259176860925605/?fref=ts">https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%B7%A6%E7%87%9F%E5%88%86%E5%B1%80-259176860925605/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½·£±ê¤À§½¡G<a href="https://www.facebook.com/PoliceNanzi/?fref=ts">https://www.facebook.com/PoliceNanzi/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½ ¤jªÀ¤À¾n©Ò¡G<a href="https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80-%E5%A4%A7%E7%A4%BE%E5%88%86%E9%A7%90%E6%89%80-192742294103072/?fref=ts">https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80-%E5%A4%A7%E7%A4%BE%E5%88%86%E9%A7%90%E6%89%80-192742294103072/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½©£¤s¤À§½¡G<a href="https://www.facebook.com/ks110ks110">https://www.facebook.com/ks110ks110</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½©£¤s¤À§½À±ªû¤À¾n©Ò¡G<a href="https://www.facebook.com/mituopolicestation/?hc_ref=ARRI0jSuh0c58q--6AHKZQYhaQIsxWOLCxbsA45BkfqBxz353glNLSS1rcNcS9WMbgQ">https://www.facebook.com/mituopolicestation/?hc_ref=ARRI0jSuh0c58q--6AHKZQYhaQIsxWOLCxbsA45BkfqBxz353glNLSS1rcNcS9WMbgQ</a><br />
-  ©£¤s¤À§½¿P±_¤À¾n©Ò¡G<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E7%87%95%E5%B7%A2%E5%88%86%E9%A7%90%E6%89%80-994557560621353/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E7%87%95%E5%B7%A2%E5%88%86%E9%A7%90%E6%89%80-994557560621353/</a><br />
-  ©£¤s¤À§½¥Ã¦w¤À¾n©Ò¡G<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%B0%B8%E5%AE%89%E5%88%86%E9%A7%90%E6%89%80-266179833587234/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%B0%B8%E5%AE%89%E5%88%86%E9%A7%90%E6%89%80-266179833587234/</a><br />
-  ©£¤s¤À§½±ê©x¤À¾n©Ò¡G<a href="https://www.facebook.com/policeinZiguan/">https://www.facebook.com/policeinZiguan/</a><br />
-  ©£¤s¤À§½¾ôÀY¤À¾n©Ò¡G<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%A9%8B%E9%A0%AD%E5%88%86%E9%A7%90%E6%89%80-1523926201230395/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%A9%8B%E9%A0%AD%E5%88%86%E9%A7%90%E6%89%80-1523926201230395/</a><br />
-  ¤¯ªZ¤À§½ªiÄR¤h¡G<a href="https://www.facebook.com/police.zw/?fref=ts">https://www.facebook.com/police.zw/?fref=ts</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½¤T¥Á²Ä¤@¤À§½-301Äµ¹îªMªM¡G<a href="https://www.facebook.com/%E4%B8%89%E6%B0%91%E7%AC%AC%E4%B8%80%E5%88%86%E5%B1%80-301%E8%AD%A6%E5%AF%9F%E6%9D%AF%E6%9D%AF-179753318887166/">https://www.facebook.com/%E4%B8%89%E6%B0%91%E7%AC%AC%E4%B8%80%E5%88%86%E5%B1%80-301%E8%AD%A6%E5%AF%9F%E6%9D%AF%E6%9D%AF-179753318887166/</a><br />
-  °ª¶¯¥«¬F©²Äµ¹î§½¤T¥Á²Ä¤G¤À§½¡G<a href="https://www.facebook.com/sanmin.second">https://www.facebook.com/sanmin.second</a><br />
+  è³‡æ–™ä¾†æºï¼š<br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€ï¼š<a href="https://www.facebook.com/KaohsiungPolice/?fref=ts" >https://www.facebook.com/KaohsiungPolice/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€é¼“å±±åˆ†å±€ï¼š<a href="https://www.facebook.com/kcpdgp/?fref=ts">https://www.facebook.com/kcpdgp/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€å·¦ç‡Ÿåˆ†å±€ï¼š<a href="https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%B7%A6%E7%87%9F%E5%88%86%E5%B1%80-259176860925605/?fref=ts">https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%B7%A6%E7%87%9F%E5%88%86%E5%B1%80-259176860925605/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€æ¥ æ¢“åˆ†å±€ï¼š<a href="https://www.facebook.com/PoliceNanzi/?fref=ts">https://www.facebook.com/PoliceNanzi/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€ å¤§ç¤¾åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80-%E5%A4%A7%E7%A4%BE%E5%88%86%E9%A7%90%E6%89%80-192742294103072/?fref=ts">https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80-%E5%A4%A7%E7%A4%BE%E5%88%86%E9%A7%90%E6%89%80-192742294103072/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€å²¡å±±åˆ†å±€ï¼š<a href="https://www.facebook.com/ks110ks110">https://www.facebook.com/ks110ks110</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€å²¡å±±åˆ†å±€å½Œé™€åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/mituopolicestation/?hc_ref=ARRI0jSuh0c58q--6AHKZQYhaQIsxWOLCxbsA45BkfqBxz353glNLSS1rcNcS9WMbgQ">https://www.facebook.com/mituopolicestation/?hc_ref=ARRI0jSuh0c58q--6AHKZQYhaQIsxWOLCxbsA45BkfqBxz353glNLSS1rcNcS9WMbgQ</a><br />
+  å²¡å±±åˆ†å±€ç‡•å·¢åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E7%87%95%E5%B7%A2%E5%88%86%E9%A7%90%E6%89%80-994557560621353/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E7%87%95%E5%B7%A2%E5%88%86%E9%A7%90%E6%89%80-994557560621353/</a><br />
+  å²¡å±±åˆ†å±€æ°¸å®‰åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%B0%B8%E5%AE%89%E5%88%86%E9%A7%90%E6%89%80-266179833587234/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%B0%B8%E5%AE%89%E5%88%86%E9%A7%90%E6%89%80-266179833587234/</a><br />
+  å²¡å±±åˆ†å±€æ¢“å®˜åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/policeinZiguan/">https://www.facebook.com/policeinZiguan/</a><br />
+  å²¡å±±åˆ†å±€æ©‹é ­åˆ†é§æ‰€ï¼š<a href="https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%A9%8B%E9%A0%AD%E5%88%86%E9%A7%90%E6%89%80-1523926201230395/">https://www.facebook.com/%E5%B2%A1%E5%B1%B1%E5%88%86%E5%B1%80%E6%A9%8B%E9%A0%AD%E5%88%86%E9%A7%90%E6%89%80-1523926201230395/</a><br />
+  ä»æ­¦åˆ†å±€æ³¢éº—å£«ï¼š<a href="https://www.facebook.com/police.zw/?fref=ts">https://www.facebook.com/police.zw/?fref=ts</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€ä¸‰æ°‘ç¬¬ä¸€åˆ†å±€-301è­¦å¯Ÿæ¯æ¯ï¼š<a href="https://www.facebook.com/%E4%B8%89%E6%B0%91%E7%AC%AC%E4%B8%80%E5%88%86%E5%B1%80-301%E8%AD%A6%E5%AF%9F%E6%9D%AF%E6%9D%AF-179753318887166/">https://www.facebook.com/%E4%B8%89%E6%B0%91%E7%AC%AC%E4%B8%80%E5%88%86%E5%B1%80-301%E8%AD%A6%E5%AF%9F%E6%9D%AF%E6%9D%AF-179753318887166/</a><br />
+  é«˜é›„å¸‚æ”¿åºœè­¦å¯Ÿå±€ä¸‰æ°‘ç¬¬äºŒåˆ†å±€ï¼š<a href="https://www.facebook.com/sanmin.second">https://www.facebook.com/sanmin.second</a><br />
   
   
 </div>
